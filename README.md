@@ -8,7 +8,6 @@ Next, I populated the database with a given sample dataset. Following that, I wr
 
 Additionally, I optimized my queries by creating indexes that increased their performance.
 
-![Screenshot 2023-05-06 at 6 19 05 PM](https://user-images.githubusercontent.com/130959114/236652903-30fe4339-c5b1-4f86-bf5c-891585026310.png)
 
 ## Author Table 
 ![Screenshot 2023-05-06 at 8 13 12 PM](https://user-images.githubusercontent.com/130959114/236655682-e964220a-9df4-4751-9dba-aed08e31d812.png)
@@ -18,6 +17,31 @@ Additionally, I optimized my queries by creating indexes that increased their pe
 ![Screenshot 2023-05-06 at 8 18 00 PM](https://user-images.githubusercontent.com/130959114/236655806-170b634c-b00b-4cc3-9ec5-c907d1b2f8ba.png)
 ## Client Table 
 ![Screenshot 2023-05-06 at 8 19 21 PM](https://user-images.githubusercontent.com/130959114/236655848-17824dc0-b2fb-4a7f-a2e9-efbfc7f07cb0.png)
+
+## Creating Relationships Among the Tables 
+![Screenshot 2023-05-06 at 6 19 05 PM](https://user-images.githubusercontent.com/130959114/236652903-30fe4339-c5b1-4f86-bf5c-891585026310.png)
+
+SQL Queries Used: 
+
+This will establish the one-to-many relationship between author and book.
+- ALTER TABLE book
+ADD CONSTRAINT FK_book_author
+FOREIGN KEY (AuthorID) REFERENCES author(AuthorID);
+
+
+
+This will establish the one-to-many relationship between client and borrower.
+- ALTER TABLE borrower
+ADD CONSTRAINT FK_borrower_client
+FOREIGN KEY (ClientID) REFERENCES client(ClientID);
+
+
+
+This will establish the one-to-many relationship between book and borrower.
+- ALTER TABLE borrower
+ADD CONSTRAINT FK_borrower_book
+FOREIGN KEY (BookID) REFERENCES book(BookID);
+
 
 
 ## Creating Indexes
