@@ -11,6 +11,6 @@ Additionally, I optimized my queries by creating indexes that increased their pe
 ![Screenshot 2023-05-06 at 6 19 05 PM](https://user-images.githubusercontent.com/130959114/236652903-30fe4339-c5b1-4f86-bf5c-891585026310.png)
 
 ## Employing Python 
-I employed Python to develop a sophisticated automation solution for formatting my dataset, enabling seamless integration with my SQL database.
+Due to the large set of data, I employed Python to develop a sophisticated automation solution for formatting my dataset, enabling seamless integration with my SQL database.
 ![Screenshot 2023-05-06 at 6 20 38 PM](https://user-images.githubusercontent.com/130959114/236652939-ff7faffc-a3ff-4b5e-9b8d-ab423cc6a03e.png)
 
